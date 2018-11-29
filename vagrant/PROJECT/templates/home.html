@@ -1,0 +1,7 @@
+<html>
+    <body>
+        {% for startup in startups %}
+         <a href='{{url_for(details(startup.id))}}'>{{startup.name}}</a><br/>
+        {% endfor %}
+    </body>
+</html>

@@ -1,0 +1,9 @@
+<!doctype html>
+<html>
+    <body>
+        <form method="POST" action="{{url_for('deleteItem',restaurant_id=item.restaurant_id, item_id=item.id)}}">
+            <p>delete {{item.name}}:</p>
+            <input type="submit" name="submit" value="delete"/>
+        </form>
+    </body>
+</html>

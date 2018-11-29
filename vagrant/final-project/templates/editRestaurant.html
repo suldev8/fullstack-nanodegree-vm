@@ -1,0 +1,10 @@
+<!doctype html>
+<html>
+    <body>
+        <form method="POST" action="{{url_for('editRestaurant',restaurant_id=restaurant.id)}}">
+            <p>name:</p>
+            <input type="text" name="name" placeholder="{{restaurant.name}}"/>
+            <input type="submit" name="submit"/>
+        </form>
+    </body>
+</html>

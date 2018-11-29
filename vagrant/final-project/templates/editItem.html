@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+    <body>
+        <form method="POST" action="{{url_for('editItem',restaurant_id=item.restaurant_id, item_id=item.id)}}">
+            <p>name:</p>
+            <input type="text" name="name" />
+            <input type="text" name="description" />
+            <input type="number" name="price" />
+            <input type="text" name="course" />
+            <input type="submit" name="submit"/>
+        </form>
+        
+    </body>
+</html>
